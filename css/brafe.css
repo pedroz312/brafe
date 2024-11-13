@@ -1,11 +1,11 @@
-body,h1,h2,h3,p,ul{
+/* RESET */
+body, h1, h2, h3, p, ul{
     padding: 0;
     margin: 0;
 }
-
 body{
     font-family: Georgia, serif;
-    color: #000000;
+    color: #252525;
 }
 
 *{
@@ -16,63 +16,79 @@ body{
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+
 }
+
+/* MENU */
+
 .menu{
-    background-color: #000000;
+    background-color: #252525;
     padding: 15px 0;
 }
+
+.menu-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+
 .menu-nav{
-    flex: 1;
+    flex:1;
     margin: 0 10px;
     align-self: center;
 }
-.menu-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.125em;
-}
+
 .menu-logo{
     margin: 0 10px;
 }
-.menu-nav ul{
+
+.menu nav ul{
     float: right;
     display: flex;
     list-style: none;
+
 }
 
 .menu-nav ul li a{
     padding: 10px;
 }
-/*banner*/
 
+/* BANNER */
 .intro{
     background-image: url(../img/bg-intro.jpg);
-    padding: 150px 0;
     background-size: cover;
-    color: white;
+    padding: 150px 0;
+    color: #ffff;
     text-align: center;
+
+
 }
 
-.intro h1{
+.intro h2{
     text-transform: uppercase;
     font-size: 3em;
 }
+
 .intro p{
     font-style: italic;
     font-size: 1.125em;
+
 }
-.intro h1::after{
+
+.intro h2:after{
     content: '';
     display: block;
     width: 20px;
     height: 4px;
-    background: white;
+    background-color: #fff;
     margin: 10px auto;
 }
 
-/*sobre*/
+/*Sobre*/
+
 
 .sobre{
+    background-color: #fff;
     padding: 60px 0;
 }
 
@@ -82,9 +98,27 @@ body{
     margin-bottom: 60px;
 }
 
-.sobre-item{
-    flex: 1;
+.sobre-item {
     margin: 0 10px;
+}
+
+.sobre-item img{
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item h3{
+    font-size: 2.25em;
+    background-color: #252525;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    width: 200px;
+    padding: 5px 0 10px 0;
+    line-height: 1em;
+    font-weight: normal;
+    position: relative;
+    top: -25px;
 }
 
 .sobre > p{
@@ -95,17 +129,56 @@ body{
     max-width: 460px;
     text-align: center;
 }
-
-.sobre-item img{
-    display: block;
-    line-height: 1em;
-    background-color: #000000;
-    color: white;
-    font-style: italic;
-    font-weight: normal;
+}
+/*Produtos*/
+.produtos{
+    background-color: #e7e4e8;
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+    padding: 60px 0;
+}
+.produtos-item{
+    flex: 1;
+    margin: 0 10px 40px 10px;
+}
+.produtos-item h2{
+    font-size: 2.25em;
     text-align: center;
-    position: relative;
-    width: 220px;
-    top: -25px;
-    padding: 5px 0 10px 0;
+    margin-bottom: 20px;
+}
+.produtos-item h2:before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: currentColor;
+    border: 5px solid #e7e4e8;
+    box-shadow: 0 0 0 5px;
+    margin: 20px auto;
+}
+h2.produtos-paulista::before{
+    color: #492201;
+}
+h2.produtos-carioca::before{
+    color: #c17139;
+}
+h2.produtos-mineiro::before{
+    color: #d7a54d;
+}
+.produtos-item {
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+.produtos-btn{
+    border: 3px solid #252525;
+    color: #252525;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    display: block;
+    width: 180px;
+    padding: 15px 0;
+    margin: 20px auto;
 }
