@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 /* Reset */
 body, h1, h2, h3,p, ul{
+=======
+/* RESET */
+body, h1, h2, h3, p, ul{
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     padding: 0;
     margin: 0;
 }
 body{
+<<<<<<< HEAD
     font-family: Gergia, serif;
+=======
+    font-family: Georgia, serif;
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     color: #252525;
 }
 *{
@@ -14,9 +23,17 @@ body{
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+<<<<<<< HEAD
    
 }
 /* Menu */
+=======
+
+}
+
+/* MENU */
+
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
 .menu{
     background-color: #252525;
     padding: 15px 0;
@@ -29,7 +46,7 @@ body{
 }
 
 .menu-nav{
-    flex: 1;
+    flex:1;
     margin: 0 10px;
     align-self: center;
 
@@ -45,24 +62,35 @@ body{
     float: right;
     display: flex;
     list-style: none;
+
 }
 
 .menu-nav ul li a{
     padding: 10px;
 }
+<<<<<<< HEAD
 
 
 /* BANNER */
+=======
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
 
+/* BANNER */
 .intro{
     background-image: url(../img/bg-intro.jpg);
-    padding: 150px 0;
     background-size: cover;
+<<<<<<< HEAD
     color: #fff;
+=======
+    padding: 150px 0;
+    color: #ffff;
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     text-align: center;
+
+
 }
 
-.intro h1{
+.intro h2{
     text-transform: uppercase;
     font-size: 3em;
 }
@@ -70,20 +98,35 @@ body{
 .intro p{
     font-style: italic;
     font-size: 1.125em;
+
 }
 
+<<<<<<< HEAD
 .intro h1::after{
+=======
+.intro h2:after{
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     content: '';
     display: block;
     width: 20px;
     height: 4px;
+<<<<<<< HEAD
     background: #fff;
     margin: 10px auto;
 }
 
 /* SOBRE */
+=======
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+/*Sobre*/
+
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
 
 .sobre{
+    background-color: #fff;
     padding: 60px 0;
 }
 .sobre h2{
@@ -91,12 +134,18 @@ body{
     text-align: center;
     margin-bottom: 60px;
 }
+<<<<<<< HEAD
 .sobre-item{
     flex: 1;
+=======
+
+.sobre-item {
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     margin: 0 10px;
 }
 
 .sobre-item img{
+<<<<<<< HEAD
 	display: block;
 	max-width: 100%;
 }
@@ -146,10 +195,57 @@ body{
 }
 
 .produtos-item h2::before{
+=======
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item h3{
+    font-size: 2.25em;
+    background-color: #252525;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    width: 200px;
+    padding: 5px 0 10px 0;
+    line-height: 1em;
+    font-weight: normal;
+    position: relative;
+    top: -25px;
+}
+
+.sobre > p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 460px;
+    text-align: center;
+}
+}
+/*Produtos*/
+.produtos{
+    background-color: #e7e4e8;
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+    padding: 60px 0;
+}
+.produtos-item{
+    flex: 1;
+    margin: 0 10px 40px 10px;
+}
+.produtos-item h2{
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.produtos-item h2:before{
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     content: '';
     display: block;
     width: 100px;
     height: 100px;
+<<<<<<< HEAD
     background-color: currentColor;
     border-radius: 50%;
     border: 5px solid #e7e4d8;
@@ -159,26 +255,50 @@ body{
 
 h2.produtos-paulista::before{
     color: #492901;
+=======
+    border-radius: 50%;
+    background-color: currentColor;
+    border: 5px solid #e7e4e8;
+    box-shadow: 0 0 0 5px;
+    margin: 20px auto;
+}
+h2.produtos-paulista::before{
+    color: #492201;
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
 }
 h2.produtos-carioca::before{
     color: #c17139;
 }
+<<<<<<< HEAD
 
 h2.produtos-mineiro::before{
     color: #d7a54d;
 }
+=======
+h2.produtos-mineiro::before{
+    color: #d7a54d;
+}
+.produtos-item {
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
 .produtos-btn{
     border: 3px solid #252525;
     color: #252525;
     text-decoration: none;
     text-align: center;
     font-size: 1.125em;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
     text-transform: uppercase;
     display: block;
     width: 180px;
     padding: 15px 0;
     margin: 20px auto;
+<<<<<<< HEAD
 }
 /* Locaix */
 
@@ -292,3 +412,6 @@ h2.produtos-mineiro::before{
 }
 
 /
+=======
+}
+>>>>>>> 3c419acb9dea2b839977b0d287d850e295ff4e70
