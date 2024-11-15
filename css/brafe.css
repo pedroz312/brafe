@@ -1,40 +1,47 @@
-body,h1,h2,h3,p,ul{
+/* Reset */
+body, h1, h2, h3,p, ul{
     padding: 0;
     margin: 0;
 }
-
 body{
-    font-family: Georgia, serif;
-    color: #000000;
+    font-family: Gergia, serif;
+    color: #252525;
 }
-
 *{
     box-sizing: border-box;
 }
-
 .container{
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+   
 }
+/* Menu */
 .menu{
-    background-color: #000000;
+    background-color: #252525;
     padding: 15px 0;
 }
+
+.menu-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+
 .menu-nav{
     flex: 1;
     margin: 0 10px;
     align-self: center;
+
 }
-.menu-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.125em;
-}
+
 .menu-logo{
     margin: 0 10px;
+    /* primeiro parametro espaço superior e inferior */
+    /* segundo parametro, espaço esquerda e direita */
 }
-.menu-nav ul{
+
+.menu nav ul{
     float: right;
     display: flex;
     list-style: none;
@@ -43,13 +50,15 @@ body{
 .menu-nav ul li a{
     padding: 10px;
 }
-/*banner*/
+
+
+/* BANNER */
 
 .intro{
     background-image: url(../img/bg-intro.jpg);
     padding: 150px 0;
     background-size: cover;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
@@ -57,50 +66,54 @@ body{
     text-transform: uppercase;
     font-size: 3em;
 }
+
 .intro p{
     font-style: italic;
     font-size: 1.125em;
 }
+
 .intro h1::after{
     content: '';
     display: block;
     width: 20px;
     height: 4px;
-    background: white;
+    background: #fff;
     margin: 10px auto;
 }
 
-/*sobre*/
+/* SOBRE */
 
 .sobre{
     padding: 60px 0;
 }
-
 .sobre h2{
     font-size: 2.25em;
     text-align: center;
     margin-bottom: 60px;
 }
-
 .sobre-item{
     flex: 1;
     margin: 0 10px;
 }
 
-.sobre > p{
-    font-size: 1.125em;
-    line-height: 1.4em;
-    font-style: italic;
-    margin: 20px auto;
-    max-width: 460px;
-    text-align: center;
+.sobre-item img{
+	display: block;
+	max-width: 100%;
+}
+.sobre > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	margin: 20px auto;
+	max-width: 460px;
+	text-align: center;
 }
 
-.sobre-item img{
-    display: block;
+.sobre-item h3{
+    font-size: 2.25em;
     line-height: 1em;
-    background-color: #000000;
-    color: white;
+    background-color: #252525;
+    color: #FFF;
     font-style: italic;
     font-weight: normal;
     text-align: center;
@@ -108,4 +121,172 @@ body{
     width: 220px;
     top: -25px;
     padding: 5px 0 10px 0;
+}
+/* PRODUTOS */
+.produtos{
+    background-color: #e7e4d8;
+    padding: 60px 0;
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+}
+.produtos-item{
+    flex:1;
+    margin: 0 10px 40px 10px;
+}
+
+.produtos-item h2{
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produtos-item p{
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+
+.produtos-item h2::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: currentColor;
+    border-radius: 50%;
+    border: 5px solid #e7e4d8;
+    box-shadow:  0 0 0 5px currentColor;
+    margin: 20px auto;
+}
+
+h2.produtos-paulista::before{
+    color: #492901;
+}
+h2.produtos-carioca::before{
+    color: #c17139;
+}
+
+h2.produtos-mineiro::before{
+    color: #d7a54d;
+}
+.produtos-btn{
+    border: 3px solid #252525;
+    color: #252525;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    width: 180px;
+    padding: 15px 0;
+    margin: 20px auto;
+}
+/* Locaix */
+
+.locais{
+    padding: 60px 0;
+}
+.locais-item{
+    margin-bottom: 40px;
+}
+
+.locais-img, .locais-info{
+    flex:1;
+    margin: 0 10px;
+}
+
+.locais-img img{
+    display: block;
+    max-width: 100%;
+}
+.locais-item h2{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.locais-item p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+
+.locais-item a{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
+}
+
+/* Assine */
+
+.assine{
+    background-color: #e7e4d8;
+    padding: 30px 0;
+}
+
+.assine-info{
+    flex: 1;
+    margin: 0 100px;
+}
+
+.assine-info, h2{
+    font-size: 2.25em;
+}
+
+.assine-info, p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.assine form{
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.assine form label{
+    display: none;
+}
+
+.assine input{
+    flex: 1;
+    align-self: flex-start;
+    padding: 10px;
+    background-color: none;
+    border: 1px solid #252525;
+    font-family: Georgia,serif;
+    font-size: 1.5em;
+}
+
+.assine button{
+    flex: 1;
+    align-self: flex-start;
+    padding: 13px;
+    background-color: #252525;
+    border: none;
+    font-family: Georgia,serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+/* footer */
+
+.footer{
+    background-color: #e7e4d8;
+    padding: 40px 0;
+}
+
+.footer img{
+    margin: 0 10px;
+}
+
+.footer p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    flex: 1;
 }
